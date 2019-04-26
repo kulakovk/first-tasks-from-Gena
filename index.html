@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задачи от Гены 07.04.19</title>
+</head>
+<body>
+    <h3>Задача 1</h3>
+    <p>функция выводит в консоль числа от  N до M 
+        вместо чисел кратных 3 выводим AAAAA
+        вместо чисел кратных 5 выводим ББББ
+        вместо чисел кратных 3 и 5 одновременно выводим АБАБАБА
+    </p>
+    <input type="text" id="task1InputOne"> <br />
+    <input type="text" id="task1InputTwo"> <br />
+    Результат:  
+    <span id="result1"></span> <br />
+    <input type="button" id="btn1" value="Нажми меня"> <br />
+    
+    <h3>Задача 2</h3>
+    <p>print(N,M)
+        функция выводит в консоль числа от  N до M    N>=1 M меньше 100   на русском языке 
+        22 (двадцать два) и тд
+    </p>
+    <input type="text" id="task2InputOne"> <br />
+    <input type="text" id="task2InputTwo"> <br />
+    Результат:  
+    <span id="result2"></span> <br />
+    <input type="button" id="btn2" value="Нажми меня">
+
+    
+   <h3>Задача 3</h3>
+   <p>print(N,M)
+        printReadable(0,1)
+        ноль
+        один
+    </p>
+    <input type="button" id="btn3" value="Нажми меня">
+    
+    <h3>Задача 4</h3>
+    <p>findMax(x,y)  возвращает большее число из переданных
+    </p>
+    <input type="text" id="task4InputOne"> <br />
+    <input type="text" id="task4InputTwo"> <br />
+    Результат:  
+    <span id="result4"></span> <br />
+    <input type="button" id="btn4" value="Нажми меня">
+    
+    <h3>Задача 5</h3>
+    <p>isLuckyTicket('123321')  true|false      билет является счастливым если сумма чисел в двух половинках равна
+    </p>
+    <input type="text" id="task5InputOne"> <br />
+    Результат:  
+    <span id="result5"></span> <br />
+    <input type="button" id="btn5" value="Нажми меня">
+    
+
+    <h3>Задача 6</h3>
+    <p>    gameGuessNumber(0,100) игра выводит сообщения с помощью confrim | prompt     программа должна угадать загаданное тобой число  (использовать метод бинарного поиска)
+    </p>
+    <h4>Загадай число от 0 до 100</h4>
+    <input type="button" id="btn6" value="Старт">
+    
+    
+    <h3>Задача 7</h3>
+    <p> clearStr('  фыв афа фывфыв ййцк й фыв  ')  очистить строку от пробелов 
+        uniqSymbols('  фыв афа фывфыв ййцк й фыв  ') вернуть строку без пробелов в которой будут только уникальные символы из строки
+        clearOdd('  фыв  афа фывфыв      ййцк й фыв  ')  очистить строку от лишних пробелов (в начале и конце и строки,  двойные пробелы между словами заменить одинарными)
+        longestWord('  фыв  афа фывфыв      ййцк й фыв  ')  найти самое длинное слово в строке
+        changeSymbol('asvadsa','a','x') => 'xsvxdsx'
+        doubleSymbol('abcd') => 'aabbccdd'
+        поделить массив на части указанные в параметре 
+    </p>
+    <input type="text" id="task7clearStr"> - clearStr <br /> 
+    <input type="text" id="task7uniqSymbols">  - uniqSymbols <br /> 
+    <input type="text" id="task7clearOdd">  - clearOdd <br /> 
+    <input type="text" id="task7longestWord">  - longestWord <br /> 
+    <input type="text" id="task7changeSymbol">  - changeSymbol (text, "a", "x") <br /> 
+    <input type="text" id="task7doubleSymbol">  - doubleSymbol <br /> 
+    Результаты в консоле
+    <input type="button" id="btn7" value="Нажми меня">
+    
+    <h3>Задача 8 (Массивы)</h3>
+    <p> поделить массив на части указанные в параметре
+
+        partsSplit(['a', 'b', 'c', 'd'], 2);
+        // => [['a', 'b'], ['c', 'd']]
+         partsSplit(['a', 'b', 'c', 'd'], 3);
+        // => [['a', 'b', 'c'], ['d']]
+        Возвращает данные из первого массива, которые не присутствуют во втором 
+        difference([2, 1], [2, 3]); => [1]
+        difference([2, 1,4], [2, 3,1,4]); => []
+        вернуть только уникальные значения 
+        uniq([1,1,1,1,1,1]) => [1]
+        удаляет один елемент из массива по индексу
+        remove([1,2,3],1)=> [1,3]
+        наполняет массив значениями от start до end с шагом значения step 
+        upfill(array,start,end,step)
+        upfill([],0,10,5) => [0,5,10]
+        возвращает индекс значения в массиве 
+        findIndex(['a','b','c'],'c') =>2 
+        findIndex(['a','b','c'],'x') =>-1
+        не используя indexOf )))
+        вовзвращает значения которые присутствуют во всех массивах (работает с любым количеством массивов) 
+
+        intersection([1,2,3],[2,3]) => [2,3]
+        intersection([1,2,3],[2,3],[1]) => []
+        intersection([1,2,3],[2,3],[2]) => [2]
+        вовзрашащает последний елемент массива
+        last([1, 2, 3]); => 3
+    </p>
+
+    <input type="button" id="btn8" value="Нажми меня и смотри консоль">
+    
+    
+    <h3>Объекты 9 задачи</h3>
+    <input type="button" id="btn9" value="Нажми меня и смотри консоль"><br />
+    <input type="button" id="btn9_2" value="asyncLogger смотри консоль"><br />
+    <input type="button" id="btn9_3" value="plannedActions смотри консоль">
+    
+    
+    
+    
+    <script src="appFuncAndStr.js"></script>
+    <script src="arrTasks.js"></script>
+    <script src="obj.js"></script>
+</body>
+</html>
